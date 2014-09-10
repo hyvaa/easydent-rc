@@ -9,4 +9,4 @@ direct controlling with AutoHotKey
 
 indirectly (remotely) controlling with node.js web server
 
-triggering on webpage
+user triggering on webpage
