@@ -3,7 +3,7 @@ easydent-rc
 
 part of da2 project
 
-Easydent remote controller
+Easydent(r) remote controller
 
 direct controlling with AutoHotKey
 
