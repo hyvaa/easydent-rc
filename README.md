@@ -1,7 +1,7 @@
 easydent-rc
 ===========
 
-part of da2 project
+a part of da2 project
 
 Easydent(r) remote controller
 
