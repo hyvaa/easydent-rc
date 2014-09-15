@@ -16,7 +16,7 @@ app.get('/api/pid-pano/:pid', function (request, response) {  //chart number
 
 	var chn = request.param('pid');
 	var res;
-	var cmd = 'c:\\easydent-rc\\easydent-pid.exe '+chn;
+	var cmd = 'c:\\easydent-rc\\easydent-rc-pid-pano.exe '+chn;
 	console.log(cmd);
 	process.exec(cmd ,  function (error, stdout, stderr) {
 		res = stdout;
