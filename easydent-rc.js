@@ -25,7 +25,9 @@ app.get('/api/pid-pano/:pid', function (request, response) {  //chart number
 	response.send({res: res});
 });
 
-
+app.get('/api/ping', function (request, response) {
+	responseeee.send(1);
+});
 
 
 
