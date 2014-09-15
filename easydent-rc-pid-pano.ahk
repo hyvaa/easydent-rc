@@ -1,5 +1,5 @@
 ;
-; easydent-rc-pid.ahk
+; easydent-rc-pid-pano.ahk
 ;
 ; part of da2 project
 ; hyvaasoft@gmail.com
