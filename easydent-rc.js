@@ -22,6 +22,7 @@ app.get('/api/pid-pano/:pid', function (request, response) {  //chart number
 		res = stdout;
 	});
 
+	response.header("Access-Control-Allow-Origin","*");	
 	response.send({res: res});
 });
 
