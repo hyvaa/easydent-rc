@@ -29,14 +29,14 @@ else
 
 loop 10
 {
-	imagesearch, vX,vY, 0,0,A_ScreenWidth, A_ScreenHeight, *10 chn1.bmp
+	imagesearch, vX,vY, 0,0,A_ScreenWidth, A_ScreenHeight, *10 images/chn1.bmp
 	if (errorlevel != 0) 
 	{ 
-	imagesearch, vX,vY, 0,0,A_ScreenWidth, A_ScreenHeight, *10 chn2.bmp 
+	imagesearch, vX,vY, 0,0,A_ScreenWidth, A_ScreenHeight, *10 images/chn2.bmp 
 	}
 	if (errorlevel != 0) 
 	{ 
-	imagesearch, vX,vY, 0,0,A_ScreenWidth, A_ScreenHeight, *10 chn3.bmp  
+	imagesearch, vX,vY, 0,0,A_ScreenWidth, A_ScreenHeight, *10 images/chn3.bmp  
 	}
 	
 	
@@ -52,15 +52,15 @@ loop 10
 	}
 	else 
 	{
-		;msgbox, not findit!
+		;msgbox, not findit! ;다른 이미지가 떠있어서 버튼이 안보이는 것이니 초기화면으로 돌린다 
 		sleep, 100
-		imagesearch, vX,vY, 0,0,A_ScreenWidth, A_ScreenHeight, *10 smode.bmp  
+		imagesearch, vX,vY, 0,0,A_ScreenWidth, A_ScreenHeight, *10 images/smode.bmp  
 		if errorlevel = 0
 		{
 			MouseClick, left, vx+5 ,vy+5, 1
 				
 			sleep, 300
-			;imagesearch, vX,vY, 0,0,A_ScreenWidth, A_ScreenHeight, *10 smodei.bmp  
+			;imagesearch, vX,vY, 0,0,A_ScreenWidth, A_ScreenHeight, *10 images/smodei.bmp  
 			;if errorlevel = 0
 			;{	
 			;	MouseClick, left, vx+5 ,vy+5,2
@@ -72,7 +72,7 @@ loop 10
 
 	}
 
-	imagesearch, vX,vY, 0,0,A_ScreenWidth, A_ScreenHeight, *10 smodei.bmp  
+	imagesearch, vX,vY, 0,0,A_ScreenWidth, A_ScreenHeight, *10 images/smodei.bmp  
 	if errorlevel = 0
 	{	
 		MouseClick, left, vx+5 ,vy+5,1
@@ -86,7 +86,7 @@ errorlevel=1
 
 loop 10
 {
-	imagesearch, vX,vY, 0,0,A_ScreenWidth, A_ScreenHeight, *10 pano.bmp
+	imagesearch, vX,vY, 0,0,A_ScreenWidth, A_ScreenHeight, *10 images/pano.bmp
 	if (errorlevel = 0)
 	{
 		sleep, 500
